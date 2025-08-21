@@ -1,0 +1,38 @@
+#Prije git push-a obavezno izuzeti osjetljive fajlove iz repo-a:
+#AWS credentials, .terraform direktorijum,...
+#
+#
+
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash/
+override.tf
+override.tf.json
+*.tfvars
+terraform.tfvars
+terraform.tfvars.json
+
+# AWS / credentials
+.aws/
+*.pem
+*.key
+
+# SSH keys
+.ssh/
+
+# Logs / OS
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Local build / temp
+node_modules/
+dist/
